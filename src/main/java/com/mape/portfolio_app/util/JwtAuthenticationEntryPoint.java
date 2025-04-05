@@ -33,7 +33,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
             errorMessage = authException.getMessage();
         }
         
-        System.out.println("\n" + errorMessage + "\n");
+        //System.out.println("\n" + errorMessage + "\n");
 
         response.setStatus(HttpStatus.UNAUTHORIZED.value());
         response.setContentType("application/json");

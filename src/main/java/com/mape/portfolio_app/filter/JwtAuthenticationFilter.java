@@ -81,7 +81,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 
             }
         
-        System.out.println("\nJWT filter passed.\n");
+        //System.out.println("\nJWT filter passed.\n");
         chain.doFilter(request, response);
     }
     
