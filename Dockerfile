@@ -6,6 +6,10 @@ WORKDIR /app
 
 # Copy the project files into the container
 COPY . /app
+#COPY target/portfolio-app-0.0.1-SNAPSHOT.jar app.jar
+
+# Make mvnw executable in the container
+RUN chmod +x mvnw
 
 # Build the application
 RUN ./mvnw clean package -DskipTests
